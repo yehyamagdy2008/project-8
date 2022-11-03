@@ -341,23 +341,37 @@ footer img:hover {
   }
 }
 /* end keyframes */
-@media (max-width: 1100px) {
+@media (min-width: 960px) and (max-width: 1100px) {
+  .about-img img {
+    margin-left: 5px;
+  }
+  .text-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    margin-left: 35px;
+    line-height: 1.4;
+    color: #2192ff;
+  }
+  .text-home h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 634px) {
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  nav ul li a {
+    padding-right: 0;
   }
   nav ul {
     margin-right: 0;
     display: flex;
     gap: 25px;
     margin-bottom: 30px;
-  }
-  nav ul li a {
-    padding-right: 0;
-  }
-  .header .logo a {
-    margin-bottom: 5px;
   }
   .text-home {
     display: flex;
@@ -378,6 +392,43 @@ footer img:hover {
   .text-home h1:nth-child(2) {
     font-size: 35px;
     margin-inline: auto;
+  }
+}
+@media (min-width: 635px) {
+  .text-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    margin-left: 35px;
+    line-height: 1.4;
+    color: #2192ff;
+  }
+  .text-home h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 950px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  nav ul li a {
+    padding-right: 10px;
+  }
+  nav ul {
+    margin-right: 0;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+  .header .logo a {
+    padding-top: 0;
+  }
+}
+@media (max-width: 950px) {
+  .header .logo a {
+    margin-bottom: 5px;
   }
   .Section-1 {
     width: 90%;
@@ -410,9 +461,13 @@ footer img:hover {
     display: flex;
     flex-direction: column;
     width: 95%;
-    margin-inline: auto;
+    margin-inline: 0;
     padding-inline: 0;
     margin-bottom: 50px;
+  }
+  .about-skils div p {
+    text-align: left;
+    padding-left: 20px;
   }
   .container-contact {
     display: flex;
